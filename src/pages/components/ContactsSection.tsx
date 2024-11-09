@@ -1,11 +1,11 @@
 import { MailIcon, PhoneIcon, MapPinIcon } from "lucide-react";
-import { ContactArticle } from "./ContactArticle";
+import { ContactArticle, ContactArticleProps } from "./ContactArticle";
 
 export function ContactsSection() {
     const email = "caioguilherme739@gmail.com";
     const phone = "+55 87 98144-3773";
 
-    const sectionsData = [
+    const contactsArticlesProps: ContactArticleProps[] = [
         {
             title: "E-mail",
             description: (
@@ -13,7 +13,7 @@ export function ContactsSection() {
                     {email}
                 </a>
             ),
-            icon: MailIcon,
+            icon: <MailIcon />,
         },
         {
             title: "Celular",
@@ -22,7 +22,7 @@ export function ContactsSection() {
                     {phone}
                 </a>
             ),
-            icon: PhoneIcon,
+            icon: <PhoneIcon />,
         },
         {
             title: "Endereço",
@@ -33,18 +33,14 @@ export function ContactsSection() {
                     </a>
                 </address>
             ),
-            icon: MapPinIcon,
+            icon: <MapPinIcon />,
         },
     ]
 
     return (
         <section className="flex flex-col gap-5">
-            {sectionsData.map((section) => (
-                <ContactArticle
-                    icon={<section.icon />}
-                    title={section.title}
-                    description={section.description}
-                />
+            {contactsArticlesProps.map((contactArticleProps) => (
+                <ContactArticle key={contactArticleProps.title} {...contactArticleProps} />
             ))}
         </section>
     );

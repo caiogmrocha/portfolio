@@ -1,6 +1,7 @@
 import ShowTecnologiaLogo from "@/assets/images/companies/show-tecnologia-logo.jpeg";
 import MitteTecnologiaLogo from "@/assets/images/companies/mitte-tecnologia-logo.jpeg";
 import { ExperienceArticle, ExperienceArticleProps } from "./ExperienceArticle";
+import { CircleDotIcon } from "lucide-react";
 
 export function ExperiencesSection() {
     const articlesProps: ExperienceArticleProps[] = [
@@ -35,7 +36,8 @@ export function ExperiencesSection() {
 
     return (
         <section className="flex flex-col gap-4 flex-1">
-            <h1 className="text-2xl text-zinc-800 font-bold mt-2 mb-4">
+            <h1 className="flex items-center text-2xl text-zinc-800 font-bold mt-2 mb-4">
+                <CircleDotIcon className="w-6 h-6 inline-block mr-2 relative left-[-1.78rem] bg-white rounded-full" />
                 Experiência
             </h1>
             <ul className="flex flex-col gap-4">

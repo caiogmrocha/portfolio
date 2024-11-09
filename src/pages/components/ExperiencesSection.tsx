@@ -18,8 +18,17 @@ export function ExperiencesSection() {
             position: "Desenvolvedor de Software | Júnior",
             company: "Mitte Tecnologia",
             location: "Osasco, SP, Brazil (Remoto)",
-            startDate: "Out 2020",
+            startDate: "Jan 2022",
             endDate: "Set 2022",
+            url: "https://www.mittetecnologia.com.br/",
+        },
+        {
+            logo: MitteTecnologiaLogo,
+            position: "Desenvolvedor de Software | Estagiário",
+            company: "Mitte Tecnologia",
+            location: "Osasco, SP, Brazil (Remoto)",
+            startDate: "Out 2020",
+            endDate: "Jan 2022",
             url: "https://www.mittetecnologia.com.br/",
         },
     ];

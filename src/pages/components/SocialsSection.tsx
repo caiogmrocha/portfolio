@@ -1,54 +1,56 @@
-import LinkedinIcon from '../../assets/images/linkedin-icon.svg';
-import GithubIcon from '../../assets/images/github-icon.svg';
-import InstagramIcon from '../../assets/images/instagram-icon.svg';
-import TwitterIcon from '../../assets/images/twitter-icon.svg';
-import { SocialArticle } from "./SocialArticle";
+import LinkedinIcon from '../../assets/images/socials/linkedin-icon.svg';
+import GithubIcon from '../../assets/images/socials/github-icon.svg';
+import InstagramIcon from '../../assets/images/socials/instagram-icon.svg';
+import TwitterIcon from '../../assets/images/socials/twitter-icon.svg';
+import { SocialArticle, SocialArticleProps } from "./SocialArticle";
 
+type AdaptedSocialArticleProps = Pick<SocialArticleProps, 'title' | 'description'> & {
+    iconPath: string
+    url: string
+};
 
 export function SocialsSection() {
-    const instagramUrl = "https://www.instagram.com/caio.guir/";
-    const twitterUrl = "https://x.com/CaioGuir";
-    const linkedinUrl = "https://www.linkedin.com/in/caiogmrocha/";
-    const githubUrl = "https://github.com/caiogmrocha/";
+    const socialsArticlesProps: AdaptedSocialArticleProps[] = [
+        {
+            title: "LinkedIn",
+            description: "Caio Rocha",
+            url: "https://www.linkedin.com/in/caiogmrocha/",
+            iconPath: LinkedinIcon,
+        },
+        {
+            title: "Github",
+            description: "caiogmrocha",
+            url: "https://github.com/caiogmrocha/",
+            iconPath: GithubIcon,
+        },
+        {
+            title: "Instagram",
+            description: "@caio.guir",
+            url: "https://www.instagram.com/caio.guir/",
+            iconPath: InstagramIcon,
+        },
+        {
+            title: "Twitter",
+            description: "@CaioGuir",
+            url: "https://x.com/CaioGuir",
+            iconPath: TwitterIcon,
+        },
+    ];
 
     return (
         <section className="flex flex-col gap-5">
-            <SocialArticle
-                icon={<img src={LinkedinIcon} alt="Linkedin" className="h-[48px] w-[48px]" />}
-                title="LinkedIn"
-                description={
-                    <a href={linkedinUrl} target="_blank" rel="noreferrer" className="hover:underline">
-                        Caio Rocha
-                    </a>
-                }
-            />
-            <SocialArticle
-                icon={<img src={GithubIcon} alt="Github" className="h-[48px] w-[48px]" />}
-                title="Github"
-                description={
-                    <a href={githubUrl} target="_blank" rel="noreferrer" className="hover:underline">
-                        caiogmrocha
-                    </a>
-                }
-            />
-            <SocialArticle
-                icon={<img src={InstagramIcon} alt="Instagram" className="h-[48px] w-[48px]" />}
-                title="Instagram"
-                description={
-                    <a href={instagramUrl} target="_blank" rel="noreferrer" className="hover:underline">
-                        @caio.guir
-                    </a>
-                }
-            />
-            <SocialArticle
-                icon={<img src={TwitterIcon} alt="Twitter" className="h-[48px] w-[48px]" />}
-                title="Twitter"
-                description={
-                    <a href={twitterUrl} target="_blank" rel="noreferrer" className="hover:underline">
-                        @CaioGuir
-                    </a>
-                }
-            />
+            {socialsArticlesProps.map((socialArticleProps) => (
+                <SocialArticle
+                    key={socialArticleProps.title}
+                    icon={<img src={socialArticleProps.iconPath} alt="Linkedin" className="h-[48px] w-[48px]" />}
+                    title={socialArticleProps.title}
+                    description={
+                        <a href={socialArticleProps.url} target="_blank" rel="noreferrer" className="hover:underline">
+                            {socialArticleProps.description}
+                        </a>
+                    }
+                />
+            ))}
         </section>
     );
 }

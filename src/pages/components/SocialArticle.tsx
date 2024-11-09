@@ -1,5 +1,5 @@
-type SocialArticleProps = React.HTMLAttributes<HTMLElement> & {
-    icon: React.ReactNode;
+export type SocialArticleProps = React.HTMLAttributes<HTMLElement> & {
+    icon: string | React.ReactNode;
     title: string;
     description: string | React.ReactNode;
 };

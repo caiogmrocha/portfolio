@@ -1,4 +1,4 @@
-type ContactArticleProps = React.HTMLAttributes<HTMLElement> & {
+export type ContactArticleProps = React.HTMLAttributes<HTMLElement> & {
     icon: React.ReactNode;
     title: string;
     description: string | React.ReactNode;

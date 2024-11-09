@@ -8,7 +8,7 @@ export function ContactsSection() {
     return (
         <section className="flex flex-col gap-5">
             <ContactArticle
-                icon={<MailIcon />}
+                icon={<MailIcon className="h-5" />}
                 title="E-mail"
                 description={
                     <a href={`mailto:${email}`} className="hover:underline">
@@ -17,7 +17,7 @@ export function ContactsSection() {
                 }
             />
             <ContactArticle
-                icon={<PhoneIcon />}
+                icon={<PhoneIcon className="h-5" />}
                 title="Phone"
                 description={
                     <a href={`tel:${phone}`} className="hover:underline">
@@ -26,7 +26,7 @@ export function ContactsSection() {
                 }
             />
             <ContactArticle
-                icon={<MapPinIcon />}
+                icon={<MapPinIcon className="h-5" />}
                 title="Endereço"
                 description={
                     <address className="not-italic">

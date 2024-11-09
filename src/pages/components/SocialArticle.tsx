@@ -1,13 +1,13 @@
-type ContactArticleProps = React.HTMLAttributes<HTMLElement> & {
+type SocialArticleProps = React.HTMLAttributes<HTMLElement> & {
     icon: React.ReactNode;
     title: string;
     description: string | React.ReactNode;
 };
 
-export function ContactArticle({ icon, title, description, ...props }: ContactArticleProps) {
+export function SocialArticle({ icon, title, description, ...props }: SocialArticleProps) {
     return (
         <article {...props} className="flex gap-4">
-            <span className="flex justify-center items-center p-3 rounded-full bg-zinc-300 text-zinc-500 aspect-square">
+            <span className="flex justify-center items-center rounded-full aspect-square">
                 {icon}
             </span>
             <p className="flex flex-col">

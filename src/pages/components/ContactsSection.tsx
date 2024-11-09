@@ -16,7 +16,7 @@ export function ContactsSection() {
             icon: MailIcon,
         },
         {
-            title: "Phone",
+            title: "Celular",
             description: (
                 <a href={`tel:${phone}`} className="hover:underline">
                     {phone}

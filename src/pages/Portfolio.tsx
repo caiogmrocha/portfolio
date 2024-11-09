@@ -2,12 +2,12 @@ import { Separator } from "@/components/ui/separator";
 import { ContactsSection } from "./components/ContactsSection";
 import { PresentationSection } from "./components/PresentationSection";
 import { SocialsSection } from "./components/SocialsSection";
-import { ExperienceSection } from "./components/ExperienceSection";
+import { ExperiencesSection } from "./components/ExperiencesSection";
 
 export function PortfolioPage() {
     return (
-        <div className="mx-auto flex h-[100vh]">
-            <aside className="flex flex-col gap-4 p-4 ">
+        <div className="lg:container mx-auto flex h-[100vh]">
+            <aside className="flex flex-col gap-4 p-4">
                 <PresentationSection />
 
                 <Separator />
@@ -21,8 +21,8 @@ export function PortfolioPage() {
 
             <Separator orientation="vertical" className="h-[100%]" />
 
-            <section className="p-4">
-                <ExperienceSection />
+            <section className="p-4 flex-1">
+                <ExperiencesSection />
             </section>
         </div>
     );

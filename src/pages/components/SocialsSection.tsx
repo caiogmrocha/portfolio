@@ -1,7 +1,7 @@
-import LinkedinIcon from '../../assets/images/linkedin-icon.svg';
-import GithubIcon from '../../assets/images/github-icon.svg';
-import InstagramIcon from '../../assets/images/instagram-icon.svg';
-import TwitterIcon from '../../assets/images/twitter-icon.svg';
+import LinkedinIcon from '../../assets/images/socials/linkedin-icon.svg';
+import GithubIcon from '../../assets/images/socials/github-icon.svg';
+import InstagramIcon from '../../assets/images/socials/instagram-icon.svg';
+import TwitterIcon from '../../assets/images/socials/twitter-icon.svg';
 import { SocialArticle } from "./SocialArticle";
 
 

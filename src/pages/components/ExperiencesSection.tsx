@@ -37,7 +37,7 @@ export function ExperiencesSection() {
     return (
         <section className="flex flex-col gap-4 flex-1">
             <h1 className="flex items-center text-2xl text-zinc-800 font-bold mt-2 mb-4">
-                <CircleDotIcon className="w-6 h-6 inline-block mr-2 relative left-[-1.78rem] bg-white rounded-full" />
+                <CircleDotIcon className="w-6 h-6 inline-block relative left-[-1.78rem] bg-white rounded-full" />
                 Experiência
             </h1>
             <ul className="flex flex-col gap-4">

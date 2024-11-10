@@ -36,8 +36,16 @@ export function HardSkillsSection() {
             url: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/knexjs/knexjs-original.svg",
         },
         {
+            name: "Puppeteer",
+            url: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/puppeteer/puppeteer-original.svg",
+        },
+        {
             name: "jQuery",
             url: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/jquery/jquery-original.svg",
+        },
+        {
+            name: "Vite",
+            url: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/vite/vite-original.svg",
         },
         {
             name: "React.js",
@@ -46,6 +54,14 @@ export function HardSkillsSection() {
         {
             name: "Vue.js",
             url: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/vuejs/vuejs-original.svg",
+        },
+        {
+            name: "TailwindCSS",
+            url: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/tailwindcss/tailwindcss-original.svg",
+        },
+        {
+            name: "Vitest",
+            url: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/vitest/vitest-original.svg",
         },
         {
             name: "Jest",

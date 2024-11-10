@@ -10,13 +10,9 @@ export function PortfolioPage() {
         <div className="lg:container mx-auto flex h-[100vh]">
             <aside className="flex flex-col gap-4 p-4">
                 <PresentationSection />
-
                 <Separator />
-
                 <ContactsSection />
-
                 <Separator />
-
                 <SocialsSection />
             </aside>
 

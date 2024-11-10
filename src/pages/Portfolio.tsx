@@ -4,11 +4,12 @@ import { PresentationSection } from "./components/PresentationSection";
 import { SocialsSection } from "./components/SocialsSection";
 import { ExperiencesSection } from "./components/ExperiencesSection";
 import { HardSkillsSection } from "./components/HardSkillsSection";
+import { ToolsSection } from "./components/ToolsSection";
 
 export function PortfolioPage() {
     return (
-        <div className="lg:container mx-auto flex h-[100vh]">
-            <aside className="flex flex-col gap-4 p-4">
+        <div className="lg:container mx-auto flex h-[100]">
+            <aside className="flex flex-col gap-4 p-4 border-r">
                 <PresentationSection />
                 <Separator />
                 <ContactsSection />
@@ -16,11 +17,10 @@ export function PortfolioPage() {
                 <SocialsSection />
             </aside>
 
-            <Separator orientation="vertical" className="h-[100%]" />
-
             <section className="p-4 flex-1">
                 <ExperiencesSection />
                 <HardSkillsSection />
+                <ToolsSection />
             </section>
         </div>
     );

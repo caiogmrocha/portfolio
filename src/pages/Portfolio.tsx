@@ -3,6 +3,7 @@ import { ContactsSection } from "./components/ContactsSection";
 import { PresentationSection } from "./components/PresentationSection";
 import { SocialsSection } from "./components/SocialsSection";
 import { ExperiencesSection } from "./components/ExperiencesSection";
+import { HardSkillsSection } from "./components/HardSkillsSection";
 
 export function PortfolioPage() {
     return (
@@ -23,6 +24,7 @@ export function PortfolioPage() {
 
             <section className="p-4 flex-1">
                 <ExperiencesSection />
+                <HardSkillsSection />
             </section>
         </div>
     );
